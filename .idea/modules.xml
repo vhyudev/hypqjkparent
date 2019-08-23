@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hypq_dao/hypq_dao.iml" filepath="$PROJECT_DIR$/hypq_dao/hypq_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hypq_domain/hypq_domain.iml" filepath="$PROJECT_DIR$/hypq_domain/hypq_domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hypq_service/hypq_service.iml" filepath="$PROJECT_DIR$/hypq_service/hypq_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hypq_utils/hypq_utils.iml" filepath="$PROJECT_DIR$/hypq_utils/hypq_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hypq_web/hypq_web.iml" filepath="$PROJECT_DIR$/hypq_web/hypq_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hypqjkparent.iml" filepath="$PROJECT_DIR$/hypqjkparent.iml" />
+    </modules>
+  </component>
+</project>

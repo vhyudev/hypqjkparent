@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hypq_web:war">
+    <output-path>$PROJECT_DIR$/hypq_web/target</output-path>
+    <root id="archive" name="hypq_web.war">
+      <element id="artifact" artifact-name="hypq_web:war exploded" />
+    </root>
+  </artifact>
+</component>
