@@ -11,6 +11,8 @@
         </property>
 
 		<property name="hibernate.show_sql">true</property>
+
+
 		<property name="format_sql">false</property>
 		<property name="hbm2ddl.auto">update</property>
 		<!-- 懒加载，配合web.xml中配置的 openSessionInViewFilter -->
