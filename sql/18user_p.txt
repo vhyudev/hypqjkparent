@@ -1,0 +1,440 @@
+--DROP TABLE user_p;
+
+CREATE TABLE user_p (
+  USER_ID varchar2(40) PRIMARY KEY NOT NULL,
+  DEPT_ID varchar2(40) default NULL,
+  USER_NAME varchar2(50) default NULL,
+  PASSWORD varchar2(64) default NULL,
+  STATE number(11) default NULL,
+  CREATE_BY varchar2(40) default NULL,
+  CREATE_DEPT varchar2(40) default NULL,
+  CREATE_TIME timestamp default systimestamp NOT NULL,
+  UPDATE_BY varchar2(40) default NULL,
+  UPDATE_TIME timestamp default to_date('1970-01-01 08:00:00','yyyy-mm-dd hh24:mi:ss') NOT NULL
+);
+
+comment on column user_p.USER_NAME is '不能重复,可为中文';
+comment on column user_p.PASSWORD is 'shiro MD5密码32位';
+comment on column user_p.STATE is '1启用0停用';
+comment on column user_p.CREATE_BY is '登录人编号';
+comment on column user_p.CREATE_DEPT is '登录人所属部门编号';
+
+
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('002108e2-9a10-4510-9683-8d8fd1d374ef',
+   '4028827c4fb6202a014fb6209c730000',
+   'lw',
+   '054d482f7b4d3633da1969b1c5c7f70e',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-10-18 17:00:53','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-10-18 17:00:53','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('18077bdb-8dd3-4aae-95a2-078c963f8416',
+   '4028827c4fb6202a014fb6209c730000',
+   'lisi',
+   '42bd4e7685cb11d3ba02716c313cb04b',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-24 00:41:12','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-24 00:14:23','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('1c7abd8a-8d67-420e-a4b5-74defcb8e968',
+   '4028827c4fb645b0014fb64668550000',
+   'E',
+   '8af2afb6347987034b0d707ac576f0c4',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-12-01 09:53:30','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-12-01 09:53:30','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('254488b1-37f0-4741-8eaf-3ababe15a3b2',
+   '4028827c4fb6202a014fb6209c730000',
+   'aa',
+   NULL,
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-20 01:05:42','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-20 01:05:42','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('290e5d08-8992-4c7b-95fc-dbbe7b592e14',
+   '4028827c4fb645b0014fb64668550000',
+   'zhaoliu',
+   'a33005a4ff1f4890efaee6f754259839',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-10-30 14:51:17','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-10-30 14:51:17','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('424b2d01-d812-4f30-be40-dcda14110118',
+   '4028827c4fb6202a014fb6209c730000',
+   'J0724',
+   '22db00a6ab82911b95e3b58eb3bd7dd4',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-10-21 10:47:24','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-10-21 10:47:24','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('5758571d-93c6-48f0-9e67-20a442779531',
+   '4028827c4fb645b0014fb64668550000',
+   'C',
+   'c1a732d1b4900854b68472148fe47504',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-12-01 09:37:51','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-12-01 09:37:51','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('671cf074-d849-4157-93e6-6024d3dcba47',
+   '4028827c4fb645b0014fb64668550000',
+   'A',
+   '91f40ee798e79cb7d4a75ecc1fec18b5',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-14 09:36:37','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-14 09:36:37','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('6f9f16c8-827b-4cc8-9e20-210aa82d1fcf',
+   '4028827c4fb645b0014fb64668550000',
+   'D',
+   '0488beaa24f24c21f6f291737baef59a',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-12-01 09:38:29','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-12-01 09:38:29','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('71a5a695-0ba5-4f0d-a0b5-0a304efde944',
+   '4028827c4fb6202a014fb6209c730000',
+   'J0723',
+   'a482e34a17bbfc6b5807cce38ac9026a',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-10-21 10:46:29','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-10-21 10:46:29','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('9fe270f8-f682-4126-92aa-604d945c95f1',
+   '4028827c4fb6202a014fb6209c730000',
+   'zhangsan',
+   '654407ac2e454fe560337510aa6adb97',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-24 00:41:00','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-24 00:13:40','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('a4e6e173-39dc-4b2d-a089-6eb92d117682',
+   '4028827c4fb6202a014fb6209c730000',
+   'asd',
+   '5933fcbd143b7c752d5f2967a41fd979',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-24 11:41:03','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-24 11:41:03','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('acde96ad-32e9-4c9c-8555-a90a282193a0',
+   '4028827c4fb645b0014fb64668550000',
+   'ajaj',
+   'b867f817d1be3fd65813a7cf798251ce',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-12 16:44:24','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-11 11:42:02','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('acde96ad-32e9-4c9c-8555-a90a282193a1',
+   '4028827c4fb645b0014fb64668550000',
+   'aa',
+   '9ec97e6366c4339a71a08b8b805f378a',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-13 15:29:22','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-12-12 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('b11c3da4-4760-4f4f-9913-78f7749ffcf9',
+   '4028827c4fb6202a014fb6209c730000',
+   'J0725',
+   '42c491bd87c7ed9ef5efdfa732665651',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-10-21 10:48:11','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-10-21 10:48:11','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('b891b14b-1316-4a79-8b88-695be1e3f42f',
+   '4028827c4fb6202a014fb6209c730000',
+   'aj',
+   'd7d57e0a542eb25ce59e667c8fc50791',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-24 11:37:10','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-24 11:37:10','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('d583ce5d-49d1-4c37-b7d8-fab189e62329',
+   '4028827c4fb645b0014fb64668550000',
+   'B',
+   '66a8c64be672631a14de2989e3e52177',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-14 16:35:05','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-14 16:35:05','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('e0de22fe-2c50-4216-ad75-ed0494d2dc92',
+   '4028827c4fb6202a014fb6209c730000',
+   'cgx',
+   'e2bd4809f74129a3df82675786c2f035',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-24 11:43:02','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-09-24 11:39:47','yyyy-mm-dd hh24:mi:ss'));
+insert into user_p
+  (USER_ID,
+   DEPT_ID,
+   USER_NAME,
+   PASSWORD,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('ee720667-5373-4a36-996b-fded2c257f48',
+   '4028827c4fb645b0014fb64668550000',
+   'wangwu',
+   '4d6a8546c786edaed7ec4858bee8975c',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-10-30 14:50:18','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-10-30 14:50:18','yyyy-mm-dd hh24:mi:ss'));

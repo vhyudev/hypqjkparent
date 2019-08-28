@@ -1,0 +1,99 @@
+--DROP TABLE role_user_p;
+
+CREATE TABLE role_user_p (
+  USER_ID varchar2(255) NOT NULL,
+  ROLE_ID varchar2(255) NOT NULL,
+  PRIMARY KEY (ROLE_ID,USER_ID)
+);
+
+
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('5758571d-93c6-48f0-9e67-20a442779531',
+   '4028a1c34ec2e5c8014ec2ebf8430001');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('6f9f16c8-827b-4cc8-9e20-210aa82d1fcf',
+   '4028a1c34ec2e5c8014ec2ebf8430001');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('1c7abd8a-8d67-420e-a4b5-74defcb8e968',
+   '4028a1c34ec2e5c8014ec2ec38cc0002');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('18077bdb-8dd3-4aae-95a2-078c963f8416',
+   '4028a1cd4ee2d9d6014ee2df4c6a0000');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('290e5d08-8992-4c7b-95fc-dbbe7b592e14',
+   '4028a1cd4ee2d9d6014ee2df4c6a0000');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('9fe270f8-f682-4126-92aa-604d945c95f1',
+   '4028a1cd4ee2d9d6014ee2df4c6a0000');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('ee720667-5373-4a36-996b-fded2c257f48',
+   '4028a1cd4ee2d9d6014ee2df4c6a0000');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('acde96ad-32e9-4c9c-8555-a90a282193a1',
+   '4028a1cd4ee2d9d6014ee2df4c6a0001');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('671cf074-d849-4157-93e6-6024d3dcba47',
+   '4028a1cd4ee2d9d6014ee2df4c6a0002');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('acde96ad-32e9-4c9c-8555-a90a282193a1',
+   '4028a1cd4ee2d9d6014ee2df4c6a0002');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('d583ce5d-49d1-4c37-b7d8-fab189e62329',
+   '4028a1cd4ee2d9d6014ee2df4c6a0004');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('424b2d01-d812-4f30-be40-dcda14110118',
+   '4028a1cd4ee2d9d6014ee2df4c6a0007');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('71a5a695-0ba5-4f0d-a0b5-0a304efde944',
+   '4028a1cd4ee2d9d6014ee2df4c6a0007');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('a4e6e173-39dc-4b2d-a089-6eb92d117682',
+   '4028a1cd4ee2d9d6014ee2df4c6a0007');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('acde96ad-32e9-4c9c-8555-a90a282193a0',
+   '4028a1cd4ee2d9d6014ee2df4c6a0007');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('b11c3da4-4760-4f4f-9913-78f7749ffcf9',
+   '4028a1cd4ee2d9d6014ee2df4c6a0007');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('b891b14b-1316-4a79-8b88-695be1e3f42f',
+   '4028a1cd4ee2d9d6014ee2df4c6a0007');
+insert into role_user_p
+  (USER_ID, ROLE_ID)
+values
+  ('e0de22fe-2c50-4216-ad75-ed0494d2dc92',
+   '4028a1cd4ee2d9d6014ee2df4c6a0007');

@@ -1,0 +1,109 @@
+--DROP TABLE purbusorderaudit_c;
+
+CREATE TABLE purbusorderaudit_c (
+  PurBusOrderAudit_id varchar2(40) default NULL,
+  userId varchar2(40) default NULL,
+  orderId varchar2(40) default NULL,
+  auditInfo varchar2(100) default NULL,
+  auditType varchar2(100) default NULL,
+  status varchar2(20) default NULL,
+  createtime date default NULL
+);
+
+
+insert into purbusorderaudit_c
+  (PurBusOrderAudit_id,
+   userId,
+   orderId,
+   auditInfo,
+   auditType,
+   status,
+   createtime)
+values
+  ('402899cd50b81f640150b81fe2580000',
+   '18077bdb-8dd3-4aae-95a2-078c963f8416',
+   'c9e0e009-4c89-4c72-962f-16eb901d5b7b',
+   '牙刷很好用',
+   'firstAudit',
+   '1',
+   to_date('2015-10-30 17:41:48','yyyy-mm-dd hh24:mi:ss'));
+insert into purbusorderaudit_c
+  (PurBusOrderAudit_id,
+   userId,
+   orderId,
+   auditInfo,
+   auditType,
+   status,
+   createtime)
+values
+  ('402899cd50b81f640150b8205d230001',
+   'ee720667-5373-4a36-996b-fded2c257f48',
+   'c9e0e009-4c89-4c72-962f-16eb901d5b7b',
+   '确实好用',
+   'secondAudit',
+   '1',
+   to_date('2015-10-30 17:42:20','yyyy-mm-dd hh24:mi:ss'));
+insert into purbusorderaudit_c
+  (PurBusOrderAudit_id,
+   userId,
+   orderId,
+   auditInfo,
+   auditType,
+   status,
+   createtime)
+values
+  ('402899cd50b81f640150b820bbee0002',
+   '290e5d08-8992-4c7b-95fc-dbbe7b592e14',
+   'c9e0e009-4c89-4c72-962f-16eb901d5b7b',
+   '很贵啊',
+   'thirdAudit',
+   '1',
+   to_date('2015-10-30 17:42:44','yyyy-mm-dd hh24:mi:ss'));
+insert into purbusorderaudit_c
+  (PurBusOrderAudit_id,
+   userId,
+   orderId,
+   auditInfo,
+   auditType,
+   status,
+   createtime)
+values
+  ('c88b2a2d-cc39-4bab-a31f-4fc0137b29d8',
+   '18077bdb-8dd3-4aae-95a2-078c963f8416',
+   '3eedc0a5-bb5c-4604-9bf4-81ad57caae4f',
+   '很好，再去多买点',
+   'firstAudit',
+   '1',
+   to_date('2015-12-08 17:28:50','yyyy-mm-dd hh24:mi:ss'));
+insert into purbusorderaudit_c
+  (PurBusOrderAudit_id,
+   userId,
+   orderId,
+   auditInfo,
+   auditType,
+   status,
+   createtime)
+values
+  ('55cc913f-f9f5-442a-8b27-92075a8f8fa6',
+   'ee720667-5373-4a36-996b-fded2c257f48',
+   '3eedc0a5-bb5c-4604-9bf4-81ad57caae4f',
+   '听从部门经理意见',
+   'secondAudit',
+   '1',
+   to_date('2015-12-08 17:30:23','yyyy-mm-dd hh24:mi:ss'));
+insert into purbusorderaudit_c
+  (PurBusOrderAudit_id,
+   userId,
+   orderId,
+   auditInfo,
+   auditType,
+   status,
+   createtime)
+values
+  ('e29d9317-cc60-47a8-80a0-50467221572b',
+   '290e5d08-8992-4c7b-95fc-dbbe7b592e14',
+   '3eedc0a5-bb5c-4604-9bf4-81ad57caae4f',
+   '听从总经理意见',
+   'thirdAudit',
+   '1',
+   to_date('2015-12-08 17:31:08','yyyy-mm-dd hh24:mi:ss'));

@@ -1,0 +1,237 @@
+--DROP TABLE role_p;
+
+CREATE TABLE role_p (
+  ROLE_ID varchar2(40) PRIMARY KEY NOT NULL,
+  NAME varchar2(30) default NULL,
+  REMARK varchar2(200) default NULL,
+  ORDER_NO number(11) default NULL,
+  CREATE_BY varchar2(40) default NULL,
+  CREATE_DEPT varchar2(40) default NULL,
+  CREATE_TIME timestamp default systimestamp NOT NULL,
+  UPDATE_BY varchar2(40) default NULL,
+  UPDATE_TIME timestamp default to_date('1970-01-01 08:00:00','yyyy-mm-dd hh24:mi:ss') NOT NULL
+);
+
+
+
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001',
+   '船运专员',
+   '船运专员',
+   9,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:59:44','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-25 09:55:21','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002',
+   '船运经理',
+   '船运经理',
+   10,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:59:47','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-25 09:55:37','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000',
+   '装箱专员',
+   '装箱专员',
+   11,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:59:49','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-31 14:49:21','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001',
+   '总经理',
+   'sysadmin',
+   1,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:58:57','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-20 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002',
+   '销售经理',
+   'salemanager',
+   2,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:58:04','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-20 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0003',
+   '合同专责',
+   'contract',
+   3,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:58:00','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-20 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004',
+   '销售专责',
+   'sale',
+   4,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:57:47','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-20 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0005',
+   '报运经理',
+   'transportation',
+   5,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:57:42','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-20 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0006',
+   '报运专责',
+   'trans',
+   6,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:57:37','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-20 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007',
+   '财务经理',
+   'financial',
+   7,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:57:32','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-20 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+insert into role_p
+  (ROLE_ID,
+   NAME,
+   REMARK,
+   ORDER_NO,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME,
+   UPDATE_BY,
+   UPDATE_TIME)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008',
+   '财务专责',
+   'fin',
+   8,
+   NULL,
+   NULL,
+   to_date('2015-09-11 16:57:25','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   to_date('2015-07-20 00:00:00','yyyy-mm-dd hh24:mi:ss'));
+

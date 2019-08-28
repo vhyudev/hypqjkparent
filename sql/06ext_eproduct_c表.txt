@@ -1,0 +1,718 @@
+--DROP TABLE ext_eproduct_c;
+
+CREATE TABLE ext_eproduct_c (
+  EXT_EPRODUCT_ID varchar2(40) PRIMARY KEY NOT NULL,
+  FACTORY_ID varchar2(40) default NULL,
+  EXPORT_PRODUCT_ID varchar2(40) default NULL,
+  PRODUCT_NO varchar2(50) default NULL,
+  PRODUCT_IMAGE varchar2(200) default NULL,
+  PRODUCT_DESC varchar2(600) default NULL,
+  CNUMBER number(11) default NULL,
+  PACKING_UNIT varchar2(10) default NULL,
+  PRICE number(10,2) default NULL,
+  AMOUNT number(10,2) default NULL,
+  PRODUCT_REQUEST varchar2(2000) default NULL,
+  ORDER_NO number(11) default NULL
+);
+
+comment on column ext_eproduct_c.PACKING_UNIT is 'PCS/SETS';
+comment on column ext_eproduct_c.AMOUNT is '自动计算: 数量x单价';
+
+
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+  ('402895c15161c91d015161ca3f7c0009',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f7b0008',
+   '5336',
+   'c8350cd2-47ae-4054-ad81-70004fe4eb44.jpg',
+   '全
+
+明料死模风灯，电镀花银喷绿色      \r\n 尺寸：14.5X20CM高      \r\n1只/五层内盒      12只/大箱      \r\n毛坯1月30日
+
+送',
+   300,
+   'PCS',
+   '3.00',
+   '900.00',
+   '★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， 
+
+\r\n       并将验货照片传回公司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司同意
+
+无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   8);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f7c000b',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f7c000a',
+   '4997',
+   '7dbc495e-a12c-4eec-9975-c93c1b3f4297.jpg',
+   '全明料死模
+
+风灯，电镀花银喷浅蓝色\r\n明料挺底      \r\n尺寸：11.5X30.5CM高    \r\n1只/五层内盒      6只/大箱  \r\n毛坯1月30日送',
+   300,
+   'PCS',
+   '1.70',
+   '510.00',
+   '
+
+★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， \r\n       并将验货照片传回公
+
+司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司同意无故延期交货造成严重后果的，
+
+按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   5);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f7e0012',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f7e0011',
+   '4998',
+   '44fc2f77-af8a-42d3-8d9b-fa2bafa8f47a.jpg',
+   '全明料死模
+
+风灯，电镀花银喷浅紫色\r\n明料挺底      \r\n尺寸：11.5X30.5CM高    \r\n1只/五层内盒      6只/大箱  \r\n毛坯1月30日送',
+   300,
+   'PCS',
+   '1.70',
+   '510.00',
+   '
+
+★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， \r\n       并将验货照片传回公
+
+司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。毛坯送至祁县瑞成玻璃镀膜厂。 \r\n       没有经过我司
+
+同意无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   6);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f840014',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f7e0013',
+   '5336',
+   '4436f9d7-b0e2-4926-9cd4-f6c66333c290.jpg',
+   '全明料死模
+
+风灯，电镀花银喷绿色      \r\n       \r\n尺寸：14.5X20CM高      \r\n1只/五层内盒      12只/大箱      \r\n毛坯1月30日
+
+送',
+   156,
+   'PCS',
+   '3.00',
+   '468.00',
+   '★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， 
+
+\r\n       并将验货照片传回公司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司同意
+
+无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   4);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f850017',
+   '19',
+   '402895c15161c91d015161ca3f840016',
+   '5118',
+   'undefined',
+   '白金字母花纸\r\nSWEETS\r\n安全包装送祁县光华
+
+厂',
+   100,
+   'PCS',
+   '3.00',
+   '300.00',
+   '1.产品的颜色、造型、尺寸、重量务必同我司封样一致；\r\n2.工厂免费提供2% 余量，以防损耗，代用包装送至指定工厂；请在外包装上注明相对应的合
+
+同号及货号；\r\n3.交期:2012年2月5日。',
+   2);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+  ('402895c15161c91d015161ca3f86001f',
+   '19',
+   '402895c15161c91d015161ca3f86001e',
+   '5117',
+   'undefined',
+   '白金字母花纸\r\nSWEETS\r\n送
+
+祁县光华厂',
+   300,
+   'PCS',
+   '3.00',
+   '900.00',
+   '1.产品的颜色、造型、尺寸、重量务必同我司封样一致；\r\n2.工厂免费提供2% 余量，以防损耗，代用包装送至指定工厂；请在外包装上注明相
+
+对应的合同号及货号；\r\n3.交期:2012年1月15日。',
+   11);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f860021',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f860020',
+   '5337',
+   '673a4e11-3706-4beb-b958-ee1d7c564b3b.jpg',
+   '全明料死模
+
+风灯，电镀花银喷蓝色      \r\n       \r\n尺寸：14.5X20CM高      \r\n1只/五层内盒      12只/大箱      \r\n毛坯1月30日
+
+送',
+   156,
+   'PCS',
+   '3.00',
+   '468.00',
+   '★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， 
+
+\r\n       并将验货照片传回公司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司同意
+
+无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   5);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f860023',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f860022',
+   '5330',
+   'be775015-234a-4504-ad52-af6af53d2a9c.jpg',
+   '全明料死模
+
+风灯，电镀花银喷紫色      \r\n      \r\n尺寸：14.5X20CM高      \r\n1只/五层内盒      12只/大箱      \r\n毛坯1月30日
+
+送',
+   156,
+   'PCS',
+   '3.00',
+   '468.00',
+   '★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， 
+
+\r\n       并将验货照片传回公司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司同意
+
+无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   3);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f870026',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f870025',
+   '4994',
+   '05b37ddc-8904-4df3-8167-b98129c600de.jpg',
+   '全明料死模
+
+风灯，电镀花银喷浅蓝色\r\n明料挺底      \r\n尺寸：11.5X20.3CM    \r\n1只/五层内盒     12只/大箱  \r\n毛坯1月30日送',
+   300,
+   'PCS',
+   '1.70',
+   '510.00',
+   '
+
+★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， \r\n       并将验货照片传回公
+
+司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。毛坯送至祁县瑞成玻璃镀膜厂。 \r\n       没有经过我司
+
+同意无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   2);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f870029',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f870028',
+   '4996',
+   '987692c0-6e47-4117-b6c8-3dbbeaca1b0c.jpg',
+   '全明料死模
+
+风灯，电镀花银喷浅绿色\r\n明料挺底      \r\n尺寸：11.5X30.5CM高    \r\n1只/五层内盒      6只/大箱  \r\n毛坯1月30日送',
+   300,
+   'PCS',
+   '1.70',
+   '510.00',
+   '
+
+★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， \r\n       并将验货照片传回公
+
+司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。毛坯送至祁县瑞成玻璃镀膜厂。 \r\n       没有经过我司
+
+同意无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   4);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f88002f',
+   '19',
+   '402895c15161c91d015161ca3f88002e',
+   '5117',
+   'aec0cd7f-795e-4c5f-b8c5-532b6479c4be.jpg',
+   '白金字母花纸\r\nSWEETS\r\n安全包装送祁县
+
+光华厂',
+   100,
+   'PCS',
+   '3.00',
+   '300.00',
+   '1.产品的颜色、造型、尺寸、重量务必同我司封样一致；\r\n2.工厂免费提供2% 余量，以防损耗，代用包装送至指定工厂；请在外包装上注明相对应
+
+的合同号及货号；\r\n3.交期:2012年2月5日。',
+   1);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f890034',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f890033',
+   '4993',
+   'a803fa9e-dda1-476a-a822-a51b226aca39.jpg',
+   '全明料死模
+
+风灯，电镀花银喷浅绿色 \r\n明料挺底      \r\n尺寸：11.5X20.3CM    \r\n1只/五层内盒      12只/大箱  \r\n毛坯1月30日送',
+   300,
+   'PCS',
+   '1.70',
+   '510.00',
+   '
+
+★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， \r\n       并将验货照片传回公
+
+司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司同意无故延期交货造成严重后果的，
+
+按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   1);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f8a0039',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f8a0038',
+   '5400',
+   '601585a1-ba16-42bb-9ffb-d187b521be1f.jpg',
+   '全明料死模
+
+风灯，电镀花银喷蓝色      \r\n尺寸：17X23CM高      \r\n1只/五层内盒      6只/大箱      \r\n毛坯1月30日
+
+送',
+   300,
+   'PCS',
+   '3.50',
+   '1050.00',
+   '★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致
+
+， \r\n       并将验货照片传回公司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司
+
+同意无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   10);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f8a003b',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f8a003a',
+   '5337',
+   'e877a4e2-2e48-4b06-91a8-3fb64f150a0f.jpg',
+   '全明料死模
+
+风灯，电镀花银喷蓝色      \r\n尺寸：14.5X20CM高      \r\n1只/五层内盒      12只/大箱      \r\n毛坯1月30日
+
+送',
+   300,
+   'PCS',
+   '3.00',
+   '900.00',
+   '★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， 
+
+\r\n       并将验货照片传回公司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司同意
+
+无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   9);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f8b003d',
+   '19',
+   '402895c15161c91d015161ca3f8a003c',
+   '5118',
+   'undefined',
+   '白金字母花纸\r\nSWEETS\r\n送祁县光华厂',
+   300,
+   'PCS',
+   '3.00',
+   '900.00',
+   '1.产
+
+品的颜色、造型、尺寸、重量务必同我司封样一致；\r\n2.工厂免费提供2% 余量，以防损耗，代用包装送至指定工厂；请在外包装上注明相对应的合同号及货号；\r\n3.交期:2012年1月15日
+
+。',
+   12);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+  ('402895c15161c91d015161ca3f8b003f',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f8b003e',
+   '5331',
+   '51902cb9-1650-480b-8373-2da4c3f2338b.jpg',
+   '全
+
+明料死模风灯，电镀花银喷绿色      \r\n尺寸：17X23CM高      \r\n1只/五层内盒      6只/大箱      \r\n毛坯1月30日
+
+送',
+   300,
+   'PCS',
+   '3.50',
+   '1050.00',
+   '★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致
+
+， \r\n       并将验货照片传回公司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。       没有经过我司
+
+同意无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   7);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('402895c15161c91d015161ca3f8e0044',
+   '4028817a33ecdbf70133ee202e49000b',
+   '402895c15161c91d015161ca3f8e0043',
+   '4995',
+   'b232e729-a02f-48b2-987b-2c6311827816.jpg',
+   '全明料死模
+
+风灯，电镀花银喷浅紫色\r\n明料挺底      \r\n尺寸：11.5X20.3CM    \r\n1只/五层内盒     12只/大箱  \r\n毛坯1月30日送',
+   300,
+   'PCS',
+   '1.70',
+   '510.00',
+   '
+
+★   产品与封样无明显差异，唛头、标签及包装质量务必符合公司要求。 \r\n ★★  产品生产前期、中期、后期抽验率不得少于10%，质量和封样一致， \r\n       并将验货照片传回公
+
+司。 \r\n★★★ 重点客人的质量标准检验，产品抽验率不得少于50%，务必做到入箱前检查。 \r\n 交期：2012年2月15日/工厂。毛坯送至祁县瑞成玻璃镀膜厂。 \r\n       没有经过我司
+
+同意无故延期交货造成严重后果的，按照客人的相关要求处理。 \r\n 开票：出货后请将增值税发票、验货报告、合同复印件及出库单一并寄至我司，以便我司安排付款。',
+   3);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+
+  ('4028a9ba516a93b301516a9fea0f0002',
+   '16',
+   '4028a9ba516a93b301516a9fea0f0001',
+   '2964',
+   '',
+   '彩盒，新菲林\r\n配全明料糖缸带盖子\r\n彩盒尺寸：
+
+22.5X22.5X48.5CM',
+   144,
+   'PCS',
+   '4.00',
+   '576.00',
+   '1.彩盒要求350克面纸；\r\n2.工厂待用安全包装，待我司运至工厂；\r\n3.工厂免费提供1%余量，以防划伤，破损；\r\n4.交期:2011年11
+
+月05日。',
+   1);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+  ('4028a9ba516a93b301516a9fea100006',
+   '16',
+   '4028a9ba516a93b301516a9fea0f0005',
+   '2965',
+   'undefined',
+   '彩盒，新菲林\r\n配全明料糖缸带盖子\r\n彩盒尺寸：
+
+20X20X41CM',
+   144,
+   'PCS',
+   '3.20',
+   '460.80',
+   '1.彩盒要求350克面纸；\r\n2.工厂待用安全包装，待我司运至工厂；\r\n3.工厂免费提供1%余量，以防划伤，破损；\r\n4.交期:2011年11月05日
+
+。',
+   2);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+  ('4028a9ba516a93b301516a9fea100008',
+   '16',
+   '4028a9ba516a93b301516a9fea100007',
+   '2976',
+   'undefined',
+   '彩盒，新菲林\r\n配明料糖缸带盖子\r\n彩盒尺寸：
+
+25.7X25.7X35.7CM',
+   144,
+   'PCS',
+   '3.90',
+   '561.60',
+   '1.彩盒要求350克面纸；\r\n2.工厂待用安全包装，待我司运至工厂；\r\n3.工厂免费提供1%余量，以防划伤，破损；\r\n4.交期:2011年11
+
+月05日。',
+   4);
+insert into ext_eproduct_c
+  (EXT_EPRODUCT_ID,
+   FACTORY_ID,
+   EXPORT_PRODUCT_ID,
+   PRODUCT_NO,
+   PRODUCT_IMAGE,
+   PRODUCT_DESC,
+   CNUMBER,
+   PACKING_UNIT,
+   PRICE,
+   AMOUNT,
+   PRODUCT_REQUEST,
+   ORDER_NO)
+values
+  ('4028a9ba516a93b301516a9fea100009',
+   '16',
+   '4028a9ba516a93b301516a9fea100007',
+   '2976',
+   'undefined',
+   '彩盒，新菲林\r\n配全明料糖缸带盖子\r\n彩盒尺寸：
+
+21.5X21.5X41CM',
+   144,
+   'PCS',
+   '3.30',
+   '475.20',
+   '1.彩盒要求350克面纸；\r\n2.工厂待用安全包装，待我司运至工厂；\r\n3.工厂免费提供1%余量，以防划伤，破损；\r\n4.交期:2011年11月
+
+05日。',
+   3);

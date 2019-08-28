@@ -1,0 +1,55 @@
+--DROP TABLE purbusorder_c;
+
+CREATE TABLE purbusorder_c (
+  PurBusOrder_id varchar2(40) PRIMARY KEY NOT NULL,
+  name varchar2(50) default NULL,
+  price number(8,2) default NULL,
+  createtime date default NULL,
+  status varchar2(10) default NULL,
+  userid varchar2(40) default NULL,
+  processinstanceId varchar2(100) default NULL,
+  endtime date default NULL,
+  content varchar2(400) default NULL
+);
+
+
+insert into purbusorder_c
+  (PurBusOrder_id,
+   name,
+   price,
+   createtime,
+   status,
+   userid,
+   processinstanceId,
+   endtime,
+   content)
+values
+  ('3eedc0a5-bb5c-4604-9bf4-81ad57caae4f',
+   '日用品',
+   '10000.00',
+   to_date('2015-12-08 15:37:33','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   '9fe270f8-f682-4126-92aa-604d945c95f1',
+   '201',
+   to_date('2015-12-08 15:37:33','yyyy-mm-dd hh24:mi:ss'),
+   '牙膏');
+insert into purbusorder_c
+  (PurBusOrder_id,
+   name,
+   price,
+   createtime,
+   status,
+   userid,
+   processinstanceId,
+   endtime,
+   content)
+values
+  ('c9e0e009-4c89-4c72-962f-16eb901d5b7b',
+   '日用品',
+   '20000.00',
+   to_date('2015-10-30 16:34:46','yyyy-mm-dd hh24:mi:ss'),
+   NULL,
+   '9fe270f8-f682-4126-92aa-604d945c95f1',
+   '305',
+   NULL,
+   '牙刷');

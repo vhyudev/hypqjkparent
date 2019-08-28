@@ -1,0 +1,32 @@
+--DROP TABLE online_info_t;
+
+CREATE TABLE online_info_t (
+  a1 char(2) default NULL
+);
+
+
+insert into online_info_t (a1) values ('00');
+insert into online_info_t (a1) values ('01');
+insert into online_info_t (a1) values ('02');
+insert into online_info_t (a1) values ('03');
+insert into online_info_t (a1) values ('04');
+insert into online_info_t (a1) values ('05');
+insert into online_info_t (a1) values ('06');
+insert into online_info_t (a1) values ('07');
+insert into online_info_t (a1) values ('08');
+insert into online_info_t (a1) values ('09');
+insert into online_info_t (a1) values ('10');
+insert into online_info_t (a1) values ('11');
+insert into online_info_t (a1) values ('12');
+insert into online_info_t (a1) values ('13');
+insert into online_info_t (a1) values ('14');
+insert into online_info_t (a1) values ('15');
+insert into online_info_t (a1) values ('16');
+insert into online_info_t (a1) values ('17');
+insert into online_info_t (a1) values ('18');
+insert into online_info_t (a1) values ('19');
+insert into online_info_t (a1) values ('20');
+insert into online_info_t (a1) values ('21');
+insert into online_info_t (a1) values ('22');
+insert into online_info_t (a1) values ('23');
+

@@ -1,0 +1,53 @@
+--DROP TABLE packing_list_c;
+
+CREATE TABLE packing_list_c (
+  PACKING_LIST_ID varchar2(40) PRIMARY KEY NOT NULL,
+  SELLER varchar2(200) default NULL,
+  BUYER varchar2(200) default NULL,
+  INVOICE_NO varchar2(30) default NULL,
+  INVOICE_DATE date default NULL,
+  MARKS varchar2(200) default NULL,
+  DESCRIPTIONS varchar2(200) default NULL,
+  EXPORT_IDS varchar2(200) default NULL,
+  EXPORT_NOS varchar2(200) default NULL,
+  STATE number(11) default NULL,
+  CREATE_BY varchar2(40) default NULL,
+  CREATE_DEPT varchar2(40) default NULL,
+  CREATE_TIME date default NULL
+);
+
+comment on column packing_list_c.INVOICE_NO is '选择';
+comment on column packing_list_c.EXPORT_IDS is '报运ID集合';
+comment on column packing_list_c.EXPORT_NOS is '报运NO集合x,y|z,h';
+comment on column packing_list_c.STATE is '0草稿 1已上报';
+
+
+
+insert into packing_list_c
+  (PACKING_LIST_ID,
+   SELLER,
+   BUYER,
+   INVOICE_NO,
+   INVOICE_DATE,
+   MARKS,
+   DESCRIPTIONS,
+   EXPORT_IDS,
+   EXPORT_NOS,
+   STATE,
+   CREATE_BY,
+   CREATE_DEPT,
+   CREATE_TIME)
+values
+  ('402899d050a3727d0150a372acfe0000',
+   'A1',
+   'D1',
+   'B1',
+   to_date('2015-09-30 00:00:00','yyyy-mm-dd hh24:mi:ss'),
+   'C1',
+   'E1',
+   '402899d050992bbd0150992c516b0000',
+   'C/3817/11 11JK1080 ',
+   0,
+   NULL,
+   NULL,
+   NULL);

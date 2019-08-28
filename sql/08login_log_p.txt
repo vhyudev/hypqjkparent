@@ -1,0 +1,166 @@
+--DROP TABLE login_log_p;
+
+CREATE TABLE login_log_p (
+  LOGIN_LOG_ID varchar2(40) PRIMARY KEY NOT NULL,
+  LOGIN_NAME varchar2(30) default NULL,
+  IP_ADDRESS varchar2(20) default NULL,
+  LOGIN_TIME date default NULL
+);
+
+
+--插入部分数据
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('00330EC5-4F2C-48BB-AFC1-ADC5CBAEB7AC',
+   '001|调试',
+   '192.168.1.110',
+   to_date('2012-01-17 14:04:46','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('009275C9-7459-4862-B339-C7CD13C244D6',
+   '001|调试',
+   '192.168.1.110',
+   to_date('2012-01-17 11:57:33','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('00D0157A-AD60-4856-802E-A3461F6939E0',
+   '001|调试',
+   '127.0.0.1',
+   to_date('2011-10-07 12:37:29','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('00DA73C6-8DB4-402A-BEE0-95BDD79D0CDB',
+   '001|调试',
+   '192.168.1.103',
+   to_date('2012-09-11 10:56:23','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('011BD53F-99AF-4B45-B23B-4E02723BE7D7',
+   '001|调试',
+   '192.168.1.106',
+   to_date('2012-10-29 14:23:51','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('015CC22A-5C53-4597-B4AC-B51694D75C86',
+   '001|调试',
+   '192.168.1.103',
+   to_date('2012-01-20 16:03:49','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('01970044-E8A0-41DD-A7CB-EF0E012FE798',
+   '001|调试',
+   '192.168.1.103',
+   to_date('2012-01-18 11:40:17','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('01C6DB18-D8AC-48CE-B3F2-09BCDFD8D9A3',
+   '001|调试',
+   '127.0.0.1',
+   to_date('2011-08-21 22:34:13','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('01F90304-E542-4B5E-9B3B-E49C17B6E891',
+   '001|调试',
+   '192.168.1.106',
+   to_date('2011-10-18 11:15:42','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('02AF06BD-65E4-4E02-8128-9E43B2AE06B6',
+   'anonymous|',
+   '192.168.1.109',
+   to_date('2012-08-14 09:54:00','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('02B4B900-9D3F-4306-8F54-6395FDB5234A',
+   '001|调试',
+   '192.168.1.106',
+   to_date('2012-10-29 14:38:24','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('02E0CA26-C6E2-4C90-B94C-4CB7C63A7971',
+   '001|调试',
+   '127.0.0.1',
+   to_date('2011-09-26 19:48:13','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('03C5ACAB-C6C4-456F-9B3D-64A80BBECADA',
+   '001|调试',
+   '127.0.0.1',
+   to_date('2011-09-18 22:49:41','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('03ED9524-0BBA-4082-8FA6-2F6BA905A627',
+   '001|调试',
+   '127.0.0.1',
+   to_date('2011-09-21 19:32:38','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('042027CF-496F-4C79-BDD8-F3BFC05EDBCC',
+   'anonymous|',
+   '192.168.1.114',
+   to_date('2012-01-20 12:15:28','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('0451DE27-3C35-4054-B27B-80EC5F5303E9',
+   '001|调试',
+   '127.0.0.1',
+   to_date('2011-08-20 00:14:17','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('0464165A-6013-4AF8-8ED3-9350369780ED',
+   '001|调试',
+   '127.0.0.1',
+   to_date('2011-10-01 21:39:43','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('04ED9BC3-FB5F-4F89-9DF6-5F34FE0ACB26',
+   '001|调试',
+   '127.0.0.1',
+   to_date('2011-08-26 20:19:15','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('05586466-481A-4426-A237-D06BB78FA27A',
+   '001|调试',
+   '192.168.1.110',
+   to_date('2012-02-09 10:33:01','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('06376BC7-200F-442A-85F4-27578A9BAA54',
+   'anonymous|',
+   '192.168.1.114',
+   to_date('2012-01-20 11:53:21','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('06767A52-69EC-430D-B15C-9BDB0952CF53',
+   'anonymous|',
+   '192.168.1.105',
+   to_date('2012-04-16 16:00:36','yyyy-mm-dd hh24:mi:ss'));
+insert into login_log_p
+  (LOGIN_LOG_ID, LOGIN_NAME, IP_ADDRESS, LOGIN_TIME)
+values
+  ('07C0244F-BFAC-45D4-945A-91B1E7B060F4',
+   'anonymous|',
+   '192.168.1.111',
+   to_date('2012-09-06 09:19:19','yyyy-mm-dd hh24:mi:ss'));
+

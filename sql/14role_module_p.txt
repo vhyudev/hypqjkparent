@@ -1,0 +1,629 @@
+--DROP TABLE role_module_p;
+
+CREATE TABLE role_module_p (
+  ROLE_ID varchar2(255) NOT NULL,
+  MODULE_ID varchar2(255) NOT NULL,
+  primary key (ROLE_ID,MODULE_ID)
+);
+
+
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '1');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '101');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '102');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '103');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '2');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '201');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '202');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '203');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '204');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '205');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '206');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '207');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ebf8430001', '208');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '1');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '101');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '102');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '103');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '2');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '201');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '202');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '203');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '204');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '205');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '206');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '207');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '208');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '3');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '301');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '302');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1c34ec2e5c8014ec2ec38cc0002', '303');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '1');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '101');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '102');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '103');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '6');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '601');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '602');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '603');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0000', '604');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '1');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '101');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '102');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '103');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '2');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '201');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '202');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '203');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '204');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '205');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '206');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '207');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '208');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '3');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '301');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '302');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '303');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '4');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '401');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '402');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '4028827c4fbbba20014fbbbc80570000');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '5');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '501');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '502');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '503');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '504');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '6');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '601');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0001', '602');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '1');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '101');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '102');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '103');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '2');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '201');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '202');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '203');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '204');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '205');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '206');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '207');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '208');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '4');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '401');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '5');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '501');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '502');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0002', '503');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '1');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '101');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '102');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '103');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '2');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '201');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '202');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '203');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '204');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '205');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '206');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0004', '207');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '1');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '101');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '102');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '103');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '2');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '201');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '202');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '203');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '204');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '205');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '206');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '207');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '208');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '3');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '301');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '302');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '303');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '4');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '401');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '402');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '4028827c4fbbba20014fbbbc80570000');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '5');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '501');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '502');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '503');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '504');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '6');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '601');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '602');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '603');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0007', '604');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '1');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '101');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '102');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '103');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '2');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '201');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '202');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '203');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '204');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '205');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '206');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '207');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '208');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '3');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '301');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '302');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '303');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '4');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '401');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '402');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '5');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '501');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '502');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '503');
+insert into role_module_p
+  (ROLE_ID, MODULE_ID)
+values
+  ('4028a1cd4ee2d9d6014ee2df4c6a0008', '504');
