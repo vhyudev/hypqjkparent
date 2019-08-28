@@ -25,6 +25,7 @@
 		<mapping resource="com/hypq/domain/User.hbm.xml"></mapping>
 		<mapping resource="com/hypq/domain/Userinfo.hbm.xml"></mapping>
 		<mapping resource="com/hypq/domain/Role.hbm.xml"></mapping>
+        <mapping resource="com/hypq/domain/Module.hbm.xml"></mapping>
 	
 	</session-factory>
 	</hibernate-configuration>

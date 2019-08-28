@@ -6,6 +6,16 @@ import java.util.Set;
 public class Role extends BaseEntity{
 	private String id;
 	private Set<User> users = new HashSet<User>(0);//角色与用户    多对多
+	private Set<Module> modules= new HashSet<>(0);
+
+	public Set<Module> getModules() {
+		return modules;
+	}
+
+	public void setModules(Set<Module> modules) {
+		this.modules = modules;
+	}
+
 	private String name;//角色名
 	private String remark;//备注
 	private String orderNo;//排序号
