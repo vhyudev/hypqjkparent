@@ -6,11 +6,12 @@ import java.util.Set;
 public class User extends BaseEntity{
 	private String id;
 	private Dept dept;//用户与部门   多对一
-	private Userinfo userinfo ;  //用户与用户扩展信息    一对一
+	private Userinfo userinfo= new Userinfo() ;  //用户与用户扩展信息    一对一
 	private Set<Role> roles = new HashSet<Role>(0);//用户与角色   多对多
 	private String userName;//用户名
 	private String password;//密码  要加密
 	private Integer state;//状态
+	private User manager;
 	
 	public String getId() {
 		return id;

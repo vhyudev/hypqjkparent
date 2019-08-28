@@ -7,7 +7,7 @@
 
 <body>
 <form name="icform" method="post">
-      <input type="hidden" name="id" value="${id}"/>
+      <input type="hidden" name="id" value="${user.id}"/>
 <div id="menubar">
 <div id="middleMenubar">
 <div id="innerMenubar">
@@ -33,21 +33,26 @@
 	        <tr>
 	            <td class="columnTitle">所在部门：</td>
 	             <td class="tableContent">
-	            	<s:select name="dept.id" list="deptList"
-	            		listKey="id" listValue="deptName"
-	            		headerKey="" headerValue="--请选择--"
-	            	></s:select>
+					 <select name="deptId">
+						 <option value="">--请选择--</option>
+						 <c:forEach items="${depts}" var="dept">
+							 <option value="${dept.id}"
+									 <c:if test="${deptId==dept.id}">selected</c:if>
+
+							 >${dept.deptName}</option>
+						 </c:forEach>
+					 </select>
 	            </td>
 	        </tr>		
 	        <tr>
 	            <td class="columnTitle">用户名：</td>
-	            <td class="tableContent"><input type="text" name="userName" value="${userName }"/></td>
+	            <td class="tableContent"><input type="text" name="userName" value="${user.userName }"/></td>
 	        </tr>	
 	         <tr>
 	            <td class="columnTitle">状态：</td>
 	            <td class="tableContentAuto">
-	              <input type="radio" name="state" class="input" ${state==0?'checked':'' } value="0">停用 
-	              <input type="radio" name="state" class="input"  ${state==1?'checked':'' } value="1">启用 
+	              <input type="radio" name="state" class="input" ${user.state==0?'checked':'' } value="0">停用
+	              <input type="radio" name="state" class="input"  ${user.state==1?'checked':'' } value="1">启用
 	            </td>
 	        </tr>		
 		</table>

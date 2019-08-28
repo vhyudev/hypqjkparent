@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC 
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="cn.itcast.jk.domain">
+<hibernate-mapping package="com.hypq.domain">
    <class name="Dept" table="DEPT_P">
       <id name="id" column="DEPT_ID">
          <generator class="uuid"></generator>

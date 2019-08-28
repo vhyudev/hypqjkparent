@@ -33,16 +33,16 @@
 	        <tr>
 	            <td class="columnTitle">所在部门：</td>
 	            <td class="tableContent">
-	            	${dept.deptName }
+	            	${user.dept.deptName }
 	            </td>
 	        </tr>		
 	        <tr>
 	            <td class="columnTitle">用户名：</td>
-	            <td class="tableContent">${userName }</td>
+	            <td class="tableContent">${user.userName }</td>
 	        </tr>	
 	         <tr>
 	            <td class="columnTitle">状态：</td>
-	            <td class="tableContent">${state==0?'停用':'启用' }</td>
+	            <td class="tableContent">${user.state==0?'停用':'启用' }</td>
 	        </tr>		
 		</table>
 	</div>

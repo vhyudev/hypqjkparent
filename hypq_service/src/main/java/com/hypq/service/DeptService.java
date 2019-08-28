@@ -1,6 +1,7 @@
 package com.hypq.service;
 
 import cn.hypq.utils.Page;
+import com.hypq.domain.Dept;
 
 import java.util.List;
 

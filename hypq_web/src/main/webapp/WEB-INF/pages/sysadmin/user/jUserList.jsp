@@ -81,7 +81,7 @@
 	</tr>
 	</thead>
 	<tbody class="tableBody" >
-${links}
+${link}
 	
 	<c:forEach items="${results}" var="o" varStatus="status">
 	<tr class="odd" onmouseover="this.className='highlight'" onmouseout="this.className='odd'" >

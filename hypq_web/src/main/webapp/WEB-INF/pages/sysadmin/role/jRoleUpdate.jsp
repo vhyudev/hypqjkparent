@@ -7,7 +7,7 @@
 
 <body>
 <form name="icform" method="post">
-	<input type="hidden" name="id" value="${id}"/>
+	<input type="hidden" name="id" value="${role.id}"/>
 
 <div id="menubar">
 <div id="middleMenubar">
@@ -37,11 +37,11 @@
 		<table class="commonTable" cellspacing="1">
 	        <tr>
 	            <td class="columnTitle">名称：</td>
-	            <td class="tableContent"><input type="text" name="name" value="${name}"/></td>
+	            <td class="tableContent"><input type="text" name="name" value="${role.name}"/></td>
 	        </tr>		
 	        <tr>
 	            <td class="columnTitle">说明：</td>
-	            <td class="tableContent"><input type="text" name="remark" value="${remark}"/></td>
+	            <td class="tableContent"><input type="text" name="remark" value="${role.remark}"/></td>
 	        </tr>		
 		</table>
 	</div>
