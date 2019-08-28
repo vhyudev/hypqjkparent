@@ -1,7 +1,6 @@
 package com.hypq.service.impl;
 
 import com.hypq.dao.BaseDao;
-import com.hypq.domain.Dept;
 import com.hypq.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
