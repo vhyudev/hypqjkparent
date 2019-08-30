@@ -16,10 +16,10 @@ CREATE TABLE packing_list_c (
   CREATE_TIME date default NULL
 );
 
-comment on column packing_list_c.INVOICE_NO is '选择';
-comment on column packing_list_c.EXPORT_IDS is '报运ID集合';
-comment on column packing_list_c.EXPORT_NOS is '报运NO集合x,y|z,h';
-comment on column packing_list_c.STATE is '0草稿 1已上报';
+comment on column packing_list_c.INVOICE_NO is '???';
+comment on column packing_list_c.EXPORT_IDS is '????ID????';
+comment on column packing_list_c.EXPORT_NOS is '????NO????x,y|z,h';
+comment on column packing_list_c.STATE is '0??? 1?????';
 
 
 

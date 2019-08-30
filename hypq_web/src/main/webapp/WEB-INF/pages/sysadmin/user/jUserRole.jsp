@@ -12,7 +12,7 @@
 
 <body>
 <form name="icform" method="post">
-	<input type="hidden" name="id" value="${id}"/>
+	<input type="hidden" name="id" value="${userInfo.id}"/>
 
 <div id="menubar">
 <div id="middleMenubar">
@@ -31,7 +31,7 @@
   <div class="textbox-header">
   <div class="textbox-inner-header">
   <div class="textbox-title">
-    用户 [${userInfo.name}] 角色列表
+    用户 [${userInfo.userName}] 角色列表
   </div> 
   </div>
   </div>

@@ -25,7 +25,7 @@
 		
 		$(document).ready(function() {
 			$.ajax( {
-				url : "${ctx}/sysadmin/roleAction_roleModuleJsonStr.action?id=${id}",
+				url : "${ctx}/sysadmin/roleAction_roleModuleJsonStr?id=${role.id}",
 				type : "get",
 				dataType : "text",
 				success : initZtree
@@ -57,7 +57,7 @@
 
 <body>
 <form name="icform" method="post">
-	<input type="hidden" name="id" value="${id}"/>
+	<input type="hidden" name="id" value="${role.id}"/>
 	<input type="hidden" id="moduleIds" name="moduleIds" value="" />
 <div id="menubar">
 <div id="middleMenubar">
@@ -76,7 +76,7 @@
   <div class="textbox-header">
   <div class="textbox-inner-header">
   <div class="textbox-title">
-    配置 [${name}] 角色的模块  
+    配置 [${role.name}] 角色的模块
   </div> 
   </div>
   </div>

@@ -12,7 +12,18 @@ public class User extends BaseEntity{
 	private String password;//密码  要加密
 	private Integer state;//状态
 	private User manager;
-	
+
+
+
+	public User getManager() {
+		return manager;
+	}
+
+	public void setManager(User manager) {
+		this.manager = manager;
+	}
+
+
 	public String getId() {
 		return id;
 	}

@@ -1,6 +1,11 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 <html>
 <head>
+	<script type="text/javascript">
+		if(self.location!=top.location){
+		    top.location=self.location;
+		}
+	</script>
 <title>陕西杰信商务综合管理平台</title>
 </head>
 <frameset rows="125,*" name="topFrameset" border="0">

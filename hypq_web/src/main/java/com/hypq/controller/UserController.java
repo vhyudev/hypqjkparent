@@ -1,9 +1,12 @@
 package com.hypq.controller;
 
+import cn.hypq.utils.Encrypt;
 import cn.hypq.utils.Page;
 import com.hypq.domain.Dept;
+import com.hypq.domain.Role;
 import com.hypq.domain.User;
 import com.hypq.service.DeptService;
+import com.hypq.service.RoleService;
 import com.hypq.service.UserService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +14,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 
@@ -22,6 +27,8 @@ public class UserController {
     UserService userService;
     @Autowired
     DeptService deptService;
+    @Autowired
+    RoleService roleService;
     //分页查询用户信息
     @RequestMapping("/userAction_list")
     public String userAction_list(Model mode,String pagenum){
@@ -64,6 +71,8 @@ public class UserController {
         user.getUserinfo().setManager(manager);
         user.setDept(dept);
 
+        //设置初始密码
+        user.setPassword(Encrypt.md5("123456",user.getUserName()));
        userService.createUser(user);
         return "redirect:userAction_list";
     }
@@ -114,4 +123,43 @@ public class UserController {
             }
         userService.deleteById( id);
     }*/
+
+    @RequestMapping("/userAction_torole")
+    public String userAction_torole(Model model,String id){
+
+        //当前选中用户userInfo
+         User userInfo = userService.findById(id);
+        //所有角色的列表roleList
+        List<Role> roleList = roleService.findAll();
+        //当前用户下的角色名字的字符串userRoleStr
+        Set<Role> roles = userInfo.getRoles();
+        StringBuilder sb=new StringBuilder();
+        for(Role role: roles){
+            sb.append("-");
+            sb.append(role.getName());
+        }
+        model.addAttribute("userInfo",userInfo);
+        model.addAttribute("roleList",roleList);
+        model.addAttribute("userRoleStr",sb.toString());
+        System.out.println(sb.toString());
+        return "sysadmin/user/jUserRole";
+    }
+
+
+    @RequestMapping("/userAction_role")
+    public String userAction_role(Model model,String id, String[] roleIds){
+
+        //当前选中用户userInfo
+        User userInfo = userService.findById(id);
+       //选中的角色添加到set集合
+        Set<Role> set=new HashSet<>();
+        for(String roleid:roleIds){
+            Role role = roleService.findById(roleid);
+            set.add(role);
+        }
+        userInfo.setRoles(set);
+        //保存
+        userService.createUser(userInfo);
+        return "redirect:userAction_list";
+    }
 }

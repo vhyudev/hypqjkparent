@@ -16,6 +16,8 @@
 
 	<context:component-scan base-package="com.hypq.service"></context:component-scan>
 
+	<!--Shiro安全框架产生代理子类的方式： 使用cglib方式-->
+	<aop:aspectj-autoproxy proxy-target-class="true" />
 
 	<!-- 3.事务管理器-->
 	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">

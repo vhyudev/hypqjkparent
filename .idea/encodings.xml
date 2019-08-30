@@ -2,5 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/hypq_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hypq_web/src/main/java/com/hypq/shiro/AuthRealm.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sql/09module_p.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sql/11packin_list_c.txt" charset="UTF-8" />
   </component>
 </project>

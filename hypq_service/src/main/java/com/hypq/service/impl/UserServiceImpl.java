@@ -5,17 +5,24 @@ import com.hypq.dao.BaseDao;
 import com.hypq.domain.User;
 import com.hypq.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Service
+@Service("userServiceImpl")
 @Transactional
 public class UserServiceImpl implements UserService {
     @Autowired
     BaseDao baseDao;
+    //邮件发送
+    @Autowired
+    private SimpleMailMessage mailMessage;
 
+    @Autowired
+    private JavaMailSender mailSender;
     @Override
     public List<User> findAll() {
         List<User> Users = baseDao.find("from User", User.class, null);
@@ -41,13 +48,29 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createUser(User User) {
-        baseDao.saveOrUpdate(User);
+    public void createUser(final User user) {
+
+        baseDao.saveOrUpdate(user);
+        Thread th=new Thread(new Runnable() {
+            @Override
+            public void run() {
+                mailMessage.setSubject("入职提醒");
+                mailMessage.setText("欢迎您加入本集团，您的用户名:"+user.getUserName()+",初始密码："+123456);
+                mailMessage.setTo(user.getUserinfo().getEmail());
+                mailSender.send(mailMessage);
+            }
+        });
+        th.start();
     }
 
 
     @Override
     public void deleteById(String id) {
         baseDao.deleteById(User.class,id);
+    }
+
+    @Override
+    public List<User> find(String hql, Class<User> userClass, Object[] strings) {
+        return baseDao.find(hql,userClass,strings);
     }
 }

@@ -4,7 +4,7 @@
 <ul>
             <c:set var="aaa" value=""/>
             <!-- 遍历当前登录用户的角色列表 -->
-			<c:forEach items="${_CURRENT_USER.roles }" var="role">
+			<c:forEach items="${current_user_info.roles }" var="role">
 			       <!-- 遍历每个角色下的模块 -->
 			       <c:forEach items="${role.modules }" var="module">
 			            <!-- 如果该模块没有输出过，则要进行输出，否则这个模块就不输出 -->

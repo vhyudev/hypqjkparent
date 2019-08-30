@@ -15,4 +15,6 @@ public interface UserService {
     void createUser(User user);
 
     void deleteById(String id);
+
+    List<User> find(String hql, Class<User> userClass, Object[] strings);
 }
