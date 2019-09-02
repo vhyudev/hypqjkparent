@@ -13,11 +13,11 @@
 
 <body>
 <form name="icform" method="post">
-	<input type="text" name="id" value="${id}"/>
-	<input type="text" name="contractProduct.contract.id" value="${contractProduct.contract.id}"/>
-	<input type="text" name="contractProduct.id" value="${contractProduct.id}"/>
+	<input type="text" name="id" value="${cp.id}"/>
+	<input type="text" name="contractProduct.contract.id" value="${cp.contractProduct.contract.id}"/>
+	<input type="text" name="contractProduct.id" value="${cp.contractProduct.id}"/>
 	
-	<input type="hidden" name="amount" value="${amount }"/>
+	<input type="hidden" name="amount" value="${cp.amount }"/>
 <div id="menubar">
 <div id="middleMenubar">
 <div id="innerMenubar">
@@ -43,39 +43,44 @@
 	        <tr>
 	            <td class="columnTitle">生产厂家：</td>
 	            <td class="tableContent">
-	            	<s:select name="factory.id" list="factoryList" 
-	            				listKey="id" listValue="factoryName" 
-	            				onchange="setFactoryName(this.options[this.selectedIndex].text);"
-	            				headerKey="" headerValue="--请选择--"/>
+					<select name="factory.id">
+						<option value="">--请选择--</option>
+						<c:forEach items="${factorylist}" var="factory">
+							<option value="${factory.id}"
+									<c:if test="${cp.factory.id==factory.id}">selected</c:if>
+
+							>${factory.factoryName}</option>
+						</c:forEach>
+					</select>
 	            	<input type="hidden" id="factoryName" name="factoryName" value=""/>
 	            </td>
 	            <td class="columnTitle">货号：</td>
-	            <td class="tableContentAuto"><input type="text" name="productNo" value="${productNo}"/></td>
+	            <td class="tableContentAuto"><input type="text" name="productNo" value="${cp.productNo}"/></td>
 	        </tr>		
 	        <tr>
 	            <td class="columnTitle">货物照片：</td>
-	            <td class="tableContent"><input type="text" name="productImage" value="${productImage}"/></td>
+	            <td class="tableContent"><input type="text" name="productImage" value="${cp.productImage}"/></td>
 	        </tr>		
 	        <tr>
 	            <td class="columnTitle">数量：</td>
-	            <td class="tableContent"><input type="text" name="cnumber" value="${cnumber}"/></td>
+	            <td class="tableContent"><input type="text" name="cnumber" value="${cp.cnumber}"/></td>
 	            <td class="columnTitle">包装单位：</td>
 	            <td class="tableContentAuto">
-	            	<input type="radio" name="packingUnit" value="PCS" <c:if test="${packingUnit=='PCS'}">checked</c:if> class="input">只
-	            	<input type="radio" name="packingUnit" value="SETS" <c:if test="${packingUnit=='SETS'}">checked</c:if> class="input">套
+	            	<input type="radio" name="packingUnit" value="PCS" <c:if test="${cp.packingUnit=='PCS'}">checked</c:if> class="input">只
+	            	<input type="radio" name="packingUnit" value="SETS" <c:if test="${cp.packingUnit=='SETS'}">checked</c:if> class="input">套
 	            </td>
 	        </tr>		
 	        <tr>
 	            <td class="columnTitle">单价：</td>
-	            <td class="tableContent"><input type="text" name="price" value="${price}"/></td>
+	            <td class="tableContent"><input type="text" name="price" value="${cp.price}"/></td>
 	            <td class="columnTitle">排序号：</td>
-	            <td class="tableContent"><input type="text" name="orderNo" value="${orderNo}"/></td>
+	            <td class="tableContent"><input type="text" name="orderNo" value="${cp.orderNo}"/></td>
 	        </tr>		
 	        <tr>
 	            <td class="columnTitle">货物描述：</td>
-	            <td class="tableContent"><textarea name="productDesc" style="height:150px;">${productDesc}</textarea>
+	            <td class="tableContent"><textarea name="productDesc" style="height:150px;">${cp.productDesc}</textarea>
 	            <td class="columnTitle">要求：</td>
-	            <td class="tableContent"><textarea name="productRequest" style="height:150px;">${productRequest}</textarea>
+	            <td class="tableContent"><textarea name="productRequest" style="height:150px;">${cp.productRequest}</textarea>
 	        </tr>		
 		</table>
 	</div>

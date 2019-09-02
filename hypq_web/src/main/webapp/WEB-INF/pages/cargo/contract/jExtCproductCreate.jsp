@@ -14,8 +14,8 @@
 
 <body>
 <form name="icform" method="post">
-	<input type="hidden" name="contractProduct.contract.id" value="${contractProduct.contract.id}"/>
-	<input type="hidden" name="contractProduct.id" value="${contractProduct.id}"/>
+	<input type="hidden" name="contractProduct.contract.id" value="${contractproduct.contract.id}"/>
+	<input type="hidden" name="contractProduct.id" value="${contractproduct.id}"/>
 	
 	
 
@@ -44,10 +44,16 @@
 	        <tr>
 	            <td class="columnTitle">生产厂家：</td>
 	            <td class="tableContent">
-	            	<s:select name="factory.id" list="factoryList" 
+	            	<%--<s:select name="factory.id" list="factoryList"
 	            				onchange="setFactoryName(this.options[this.selectedIndex].text);"
-	            				listKey="id" listValue="factoryName" 
-	            				headerKey="" headerValue="--请选择--"/>
+	            				listKey="id" listValue="factoryName"
+	            				headerKey="" headerValue="--请选择--"/>--%>
+                        <select name="factory.id">
+                            <option value="">--请选择--</option>
+                            <c:forEach items="${factoryList}" var="dept">
+                                <option value="${dept.id}"
+
+                                >${dept.factoryName}</option></c:forEach></select>
 	            	<input type="hidden" id="factoryName" name="factoryName" value=""/>
 	            </td>
 	            <td class="columnTitle">货号：</td>
@@ -122,8 +128,8 @@
 		<td>${o.price}</td>
 		<td>${o.amount}</td>
 		<td>
-			<a href="extCproductAction_toupdate.action?id=${o.id}">[修改]</a>
-			<a href="extCproductAction_delete.action?id=${o.id}&contractProduct.id=${o.contractProduct.id}&contractProduct.contract.id=${contractProduct.contract.id}">[删除]</a>
+			<a href="extCproductAction_toupdate?id=${o.id}">[修改]</a>
+			<a href="extCproductAction_delete?id=${o.id}&contractProduct.id=${o.contractProduct.id}&contractProduct.contract.id=${o.contractProduct.contract.id}">[删除]</a>
 		</td>
 	</tr>
 	</c:forEach>

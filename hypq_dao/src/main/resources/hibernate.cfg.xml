@@ -26,6 +26,10 @@
 		<mapping resource="com/hypq/domain/Userinfo.hbm.xml"></mapping>
 		<mapping resource="com/hypq/domain/Role.hbm.xml"></mapping>
         <mapping resource="com/hypq/domain/Module.hbm.xml"></mapping>
+		<mapping resource="com/hypq/domain/Contract.hbm.xml"></mapping>
+		<mapping resource="com/hypq/domain/ContractProduct.hbm.xml"></mapping>
+		<mapping resource="com/hypq/domain/Factory.hbm.xml"></mapping>
+		<mapping resource="com/hypq/domain/ExtCproduct.hbm.xml"></mapping>
 	
 	</session-factory>
 	</hibernate-configuration>

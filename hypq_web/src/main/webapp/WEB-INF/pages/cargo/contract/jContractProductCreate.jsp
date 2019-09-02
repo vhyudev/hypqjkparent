@@ -40,11 +40,18 @@
 	        <tr>
 	            <td class="columnTitle">生产厂家：</td>
 	            <td class="tableContent">
-	            	 <s:select name="factory.id" list="factoryList" 
+	            	 <%--<s:select name="factory.id" list="factoryList"
 	            				onchange="setFactoryName(this.options[this.selectedIndex].text);"
-	            				listKey="id" listValue="factoryName" 
-	            				headerKey="" headerValue="--请选择--"/>
-	            				
+	            				listKey="id" listValue="factoryName"
+	            				headerKey="" headerValue="--请选择--"/>--%>
+								<select name="factory.id">
+								<option value="">--请选择--</option>
+								<c:forEach items="${factoryList}" var="dept">
+									<option value="${dept.id}"
+
+                                    >${dept.factoryName}</option></c:forEach></select>
+
+
 	            	<input type="hidden" id="factoryName" name="factoryName" value=""/>
 	            </td>
 	            <td class="columnTitle">货号：</td>
@@ -111,7 +118,7 @@
 	<tbody class="tableBody" >
 	${links }
  	<c:forEach items="${results}" var="o" varStatus="status">
-	<tr class="odd" onmouseover="this.className='highlight'" onmouseout="this.className='odd'" >
+	<tr class="odd"  onmouseover="this.className='highlight'" onmouseout="this.className='odd'"  align="left">
 		<td><input type="checkbox" name="id" value="${o.id}"/></td>
 		<td>${status.index+1}</td>
 		<td>${o.factoryName}</td>
@@ -123,9 +130,9 @@
 		<td>${o.price}</td>
 		<td>${o.amount}</td>
 		<td>
-			<a href="contractProductAction_toupdate.action?id=${o.id}">[修改]</a>
-			<a href="contractProductAction_delete.action?id=${o.id}&contract.id=${o.contract.id}">[删除]</a>
-			<a href="extCproductAction_tocreate.action?contractProduct.contract.id=${o.contract.id}&contractProduct.id=${o.id}">[附件]</a>
+			<a href="contractProductAction_toupdate?id=${o.id}">[修改]</a>
+			<a href="contractProductAction_delete?id=${o.id}&contractid=${o.contract.id}">[删除]</a>
+			<a href="${ctx}/extcargo/extCproductAction_tocreate?contractProduct.contract.id=${o.contract.id}&contractProduct.id=${o.id}">[附件]</a>
 		</td>
 	</tr>
 	
